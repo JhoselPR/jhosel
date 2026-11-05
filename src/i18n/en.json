@@ -134,7 +134,8 @@
           "code": "https://github.com/JhoselPR/cybertracker",
           "deploy": "https://cybertracker-tau.vercel.app/",
           "img": "/img/project-card/cybertracker-screen.jpg",
-          "video": "/img/project-card/cybertracker-demo.mp4"
+          "video": "/img/project-card/cybertracker-demo.mp4",
+          "videoAspect": "1280 / 774"
         },
         "clutch-or-cringe": {
           "label": "AI-powered VALORANT roast card generator",
@@ -172,6 +173,25 @@
           "code": "https://github.com/JhoselPR/domux",
           "deploy": "https://domux.vercel.app/",
           "img": "/img/project-card/domux-screen.jpg"
+        },
+        "taxi-runner-web": {
+          "label": "3D browser game",
+          "title": "Taxi Runner Web",
+          "context": "SODVI · 2026",
+          "description": "3D voxel-art endless runner: drive a taxi through Mexico City, dodge traffic, collect coins, and unlock new characters.",
+          "highlight": "Web version of the original Unity game, winner of best game of the semester at UNAM, with progressive difficulty, power-ups, and graphics quality that adapts to the device.",
+          "stack": [
+            "Three.js",
+            "TypeScript",
+            "Vite",
+            "Vitest",
+            "Playwright"
+          ],
+          "code": "https://github.com/JhoselPR/TaxiRunner-Web",
+          "deploy": "https://jhoselpr.github.io/TaxiRunner-Web/",
+          "img": "/img/project-card/taxi-runner-web-screen.jpg",
+          "video": "/img/project-card/taxi-runner-web-demo.mp4",
+          "videoAspect": "1280 / 802"
         },
         "raicesmx": {
           "label": "E-commerce platform",

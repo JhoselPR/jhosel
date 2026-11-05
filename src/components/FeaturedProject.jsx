@@ -6,7 +6,7 @@ import { FiArrowUpRight, FiPlay } from "react-icons/fi";
 const mediaFrameClass =
   "group relative block overflow-hidden rounded-2xl border border-border-stealth shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)] transition-colors duration-300 hover:border-accent-primary/50 md:col-span-7";
 
-function ProjectVideo({ src, thumbnail, label, hint, className }) {
+function ProjectVideo({ src, thumbnail, label, hint, className, style }) {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [{ canHover, prefersReducedMotion }] = useState(() => ({
@@ -51,7 +51,7 @@ function ProjectVideo({ src, thumbnail, label, hint, className }) {
 
   if (prefersReducedMotion) {
     return (
-      <div className={className}>
+      <div className={className} style={style}>
         <video
           src={src}
           poster={thumbnail}
@@ -70,6 +70,7 @@ function ProjectVideo({ src, thumbnail, label, hint, className }) {
   return (
     <div
       className={className}
+      style={style}
       tabIndex={playsOnHover ? 0 : undefined}
       onMouseEnter={playsOnHover ? play : undefined}
       onMouseLeave={playsOnHover ? stop : undefined}
@@ -123,7 +124,8 @@ export default function FeaturedProject({ item, reversed }) {
           thumbnail={item.img}
           label={t("projects.videoAlt", { title: item.title })}
           hint={t("projects.videoHint")}
-          className={`${mediaFrameClass} aspect-[1280/774] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary ${orderClass}`}
+          style={{ aspectRatio: item.videoAspect }}
+          className={`${mediaFrameClass} focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-primary ${orderClass}`}
         />
       ) : (
         <a

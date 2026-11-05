@@ -4,11 +4,15 @@ export const projects = [
     featured: true,
   },
   {
-    key: "clutch-or-cringe",
+    key: "domux",
     featured: true,
   },
   {
-    key: "domux",
+    key: "taxi-runner-web",
+    featured: true,
+  },
+  {
+    key: "clutch-or-cringe",
     featured: true,
   },
   {

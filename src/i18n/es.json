@@ -134,7 +134,8 @@
           "code": "https://github.com/JhoselPR/cybertracker",
           "deploy": "https://cybertracker-tau.vercel.app/",
           "img": "/img/project-card/cybertracker-screen.jpg",
-          "video": "/img/project-card/cybertracker-demo.mp4"
+          "video": "/img/project-card/cybertracker-demo.mp4",
+          "videoAspect": "1280 / 774"
         },
         "clutch-or-cringe": {
           "label": "Generador de roast cards para VALORANT",
@@ -172,6 +173,25 @@
           "code": "https://github.com/JhoselPR/domux",
           "deploy": "https://domux.vercel.app/",
           "img": "/img/project-card/domux-screen.jpg"
+        },
+        "taxi-runner-web": {
+          "label": "Videojuego 3D para navegador",
+          "title": "Taxi Runner Web",
+          "context": "SODVI · 2026",
+          "description": "Endless runner 3D en voxel art: conduce un taxi por la CDMX, esquiva el tráfico, recoge monedas y compra nuevos personajes.",
+          "highlight": "Versión web del juego original en Unity, ganador del mejor videojuego del semestre en la UNAM, con dificultad progresiva, potenciadores y calidad gráfica que se ajusta sola al dispositivo.",
+          "stack": [
+            "Three.js",
+            "TypeScript",
+            "Vite",
+            "Vitest",
+            "Playwright"
+          ],
+          "code": "https://github.com/JhoselPR/TaxiRunner-Web",
+          "deploy": "https://jhoselpr.github.io/TaxiRunner-Web/",
+          "img": "/img/project-card/taxi-runner-web-screen.jpg",
+          "video": "/img/project-card/taxi-runner-web-demo.mp4",
+          "videoAspect": "1280 / 802"
         },
         "raicesmx": {
           "label": "E-commerce",
